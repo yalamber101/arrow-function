@@ -43,3 +43,76 @@ console.log(len("dikamber")); // Output: 8
 let num = [1, 23, 3, 40];
 let filters = () => num.filter((n) => n > 10);
 console.log(filters()); // Output: [23, 40]
+
+// loop
+// 1. Write a program to print numbers from 1 to 50 using a loop.
+for (let i = 1; i <= 50; i++) {
+  console.log(i);
+}
+// 2. Print all even numbers between 1 and 100.
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    console.log(`${i} is even`);
+  } else {
+    console.log(`${i} is odd`);
+  }
+}
+// 3. Print the multiplication table of any number (example: 5).
+
+let nub = 5;
+for (let i = 1; i <= 10; i++) {
+  console.log(`${nub} * ${i} = ${nub * i}`);
+}
+// 4. Print the sum of the first 10 natural numbers using a loop.
+let sumb = 0;
+for (let i = 1; i <= 10; i++) {
+  sumb = sumb + i;
+}
+console.log(`The sum of first 10 neutral number is ${sumb}`);
+// 5. Print all numbers from 50 to 1 in reverse order.
+
+for (let i = 50; i >= 1; i--) {
+  console.log(i);
+}
+// 6. Count how many numbers from 1 to 100 are divisible by 3.
+let count = 0;
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0) {
+    count++;
+  }
+}
+
+console.log(`Total numbers divisible by 3: ${count}`);
+
+// 7. Print the factorial of a given number (example: 5 → 120).
+// 7. Print the factorial of a given number
+let nb = 5; // You canb chanbge this nbumber
+let factorial = 1; // Start with 1 because multiplyinbg by 0 gives 0
+
+for (let i = 1; i <= nb; i++) {
+  factorial *= i; // same as factorial = factorial * i
+}
+
+console.log(`Factorial of ${nb} is ${factorial}`);
+
+// 8. Print each element of an array using a loop.
+
+let arr = ["apple", "banana", "mango", "grapes"];
+for (let i = 0; i < arr.length; i++) {
+  let element = arr[i];
+  console.log(element);
+}
+
+/// 9. Print the square of numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+  let sq = i * i;
+  console.log(`Square of ${i} is ${sq}`);
+}
+
+// 10. Print numbers from 1 to 100, but skip numbers divisible by 5
+for (let i = 1; i <= 100; i++) {
+  if (i % 5 !== 0) {
+    console.log(i);
+  }
+}
